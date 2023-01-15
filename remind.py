@@ -12,6 +12,17 @@ x-y
 d = dt.timedelta(days=409)
 d.total_seconds()
 
+from dateutil.relativedelta import relativedelta
+
+x = dt.datetime(2000,12,31)
+y = relativedelta(months=12)
+x-y
+
+
+import time
+time.sleep(5)
+print(x)
+##클래스의 이해
 # 메서드 오버라이딩의 이해
 # 부모에게 상속받은 같은 이름의 메서드를 다른방식으로 사용하는 것을 의미함
 # 게임 캐릭터 코드에서 attacked 메서드도 오버라이딩을 하여 전사와 마법사가 공격을 받을 때 life 속성값이 다르게 감소하도록 한다.
